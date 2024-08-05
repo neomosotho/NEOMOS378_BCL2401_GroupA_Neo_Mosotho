@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.js">
+      import { createApp } from "vue";
+      const App = {
+        data() {
+          return {
+            message: "Hello, World!",
+          };
+        },
+      };
+
+      createApp(App).mount("#app");
+    </script>
   </body>
 </html>
